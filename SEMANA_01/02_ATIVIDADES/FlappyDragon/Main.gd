@@ -1,8 +1,8 @@
 extends Node # instancia a classe Node2D
 
-var status = 1 # se "status" igual a 1, o jogo está rodando
-var vscore = 0 # se "vscore" igual a 0, o score está zerado
-var x = 1.5 # "x" representa a velocidade horizontal do cenário
+var status = 1 # se "status" igual a 1, o jogo está rodando; se "status" igual a 0, o jogo está parado
+var vscore = 0 # o score é zerado quando o player perder. Ou seja, se "vscore" igual a 0, o score está zerado
+var x = 1.5 # "x" representa a velocidade horizontal do cenário. Velocidade no eixo X
 var y = 1.5 # "y" representa o peso/gravidade do personagem no jogo 
 
 # executa essa função ao carregar o jogo
