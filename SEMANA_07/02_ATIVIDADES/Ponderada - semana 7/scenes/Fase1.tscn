@@ -1,0 +1,267 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Imagens/labirinto.jpg" type="Texture" id=2]
+[ext_resource path="res://Imagens/dino vermelho.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/imagem galaxia.jpeg" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 425.556, 35.2375 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 35.6044, 304.553 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 93.6733, 32.0914 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 33.9089, 94.3523 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 69.0893, 68.902 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 35.5625, 177.862 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 55.5259, 34.6083 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 70.3609, 33.3498 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 35.1373, 118.893 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 35.3923, 332.24 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 35.3492, 78.026 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 95.9613, 33.3498 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 331.756, 33.9791 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 58.4928, 35.2376 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 35.1805, 100.679 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 97.0641, 33.9788 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 35.1803, 76.1383 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 34.7539, 74.8458 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 34.7566, 76.8685 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 34.7566, 110.747 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 23.0977, 35.2375 )
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 21.6168, 20.765 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 2.54313, 42.7545 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 21.1931, 22.6527 )
+
+[node name="Labirinto" type="Sprite"]
+position = Vector2( 513.809, 301.625 )
+scale = Vector2( 1.17963, 0.794607 )
+texture = ExtResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1.8573, -329.251 )
+shape = SubResource( 1 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D2"]
+position = Vector2( -388.943, 62.1374 )
+shape = SubResource( 2 )
+
+[node name="KinematicBody2D3" type="KinematicBody2D" parent="."]
+position = Vector2( -253.307, -25.9562 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D3"]
+position = Vector2( -5.51019, -1.88773 )
+shape = SubResource( 3 )
+
+[node name="KinematicBody2D4" type="KinematicBody2D" parent="."]
+position = Vector2( -126.149, -41.058 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D4"]
+position = Vector2( -144.96, -158.535 )
+shape = SubResource( 4 )
+
+[node name="KinematicBody2D5" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D5"]
+position = Vector2( -116.824, -172.884 )
+shape = SubResource( 5 )
+
+[node name="KinematicBody2D6" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D6"]
+position = Vector2( -82.9149, 74.3067 )
+shape = SubResource( 6 )
+
+[node name="KinematicBody2D7" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D7"]
+position = Vector2( 9.06305, 60.2499 )
+shape = SubResource( 7 )
+
+[node name="KinematicBody2D8" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D8"]
+position = Vector2( -234.657, 92.9705 )
+shape = SubResource( 8 )
+
+[node name="KinematicBody2D9" type="KinematicBody2D" parent="."]
+position = Vector2( -60.8741, 21.8661 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D9"]
+position = Vector2( -208.92, 224.01 )
+shape = SubResource( 9 )
+
+[node name="KinematicBody2D10" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D10"]
+position = Vector2( 392.445, 38.2264 )
+shape = SubResource( 10 )
+
+[node name="KinematicBody2D11" type="KinematicBody2D" parent="."]
+position = Vector2( 33.223, -144.254 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D11"]
+position = Vector2( 0, -71.7335 )
+shape = SubResource( 11 )
+
+[node name="KinematicBody2D12" type="KinematicBody2D" parent="."]
+position = Vector2( 23.898, -38.5411 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D12"]
+position = Vector2( 71.04, -20.765 )
+shape = SubResource( 12 )
+
+[node name="KinematicBody2D13" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D13"]
+position = Vector2( -22.1752, 331.453 )
+shape = SubResource( 13 )
+
+[node name="KinematicBody2D14" type="KinematicBody2D" parent="."]
+position = Vector2( -5.77222, 20.6076 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D14"]
+position = Vector2( -171.24, 196.323 )
+shape = SubResource( 14 )
+
+[node name="KinematicBody2D15" type="KinematicBody2D" parent="."]
+position = Vector2( 119.691, -124.118 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D15"]
+position = Vector2( 36.0281, -69.2165 )
+shape = SubResource( 15 )
+
+[node name="KinematicBody2D16" type="KinematicBody2D" parent="."]
+position = Vector2( 143.427, -158.097 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D16"]
+position = Vector2( 70.7849, 217.717 )
+shape = SubResource( 16 )
+
+[node name="KinematicBody2D17" type="KinematicBody2D" parent="."]
+position = Vector2( 71.3705, -53.6429 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D17"]
+position = Vector2( 80.9575, 223.381 )
+shape = SubResource( 17 )
+
+[node name="KinematicBody2D18" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D18"]
+position = Vector2( 32.378, 221.37 )
+shape = SubResource( 18 )
+
+[node name="KinematicBody2D19" type="KinematicBody2D" parent="."]
+position = Vector2( 18.8117, 54.5867 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D19"]
+position = Vector2( 256.012, 166.019 )
+shape = SubResource( 19 )
+
+[node name="KinematicBody2D20" type="KinematicBody2D" parent="."]
+position = Vector2( 22.2026, 73.464 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D20"]
+position = Vector2( 254.316, -208.908 )
+shape = SubResource( 20 )
+
+[node name="KinematicBody2D21" type="KinematicBody2D" parent="."]
+position = Vector2( 14.5731, 92.3412 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D21"]
+position = Vector2( 319.382, -152.276 )
+shape = SubResource( 21 )
+
+[node name="KinematicBody2D22" type="KinematicBody2D" parent="."]
+position = Vector2( 1.85736, 4.24738 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="DinoVermelho" type="Sprite" parent="KinematicBody2D22"]
+position = Vector2( -402.135, -267.216 )
+scale = Vector2( 0.0489454, 0.0607282 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D22"]
+position = Vector2( -398.692, -268.214 )
+shape = SubResource( 22 )
+
+[node name="KinematicBody2D23" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D23"]
+position = Vector2( -421.157, -266.327 )
+shape = SubResource( 23 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -3.05176e-05, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 333.317, 313.834 )
+shape = SubResource( 24 )
+
+[node name="ImagemGalaxia" type="Sprite" parent="."]
+position = Vector2( 333.317, 313.834 )
+scale = Vector2( 0.164664, 0.237026 )
+texture = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+margin_left = -416.07
+margin_top = -358.196
+margin_right = -354.07
+margin_bottom = -338.196
+text = "VOLTAR"
+
+[connection signal="body_entered" from="Area2D" to="KinematicBody2D22" method="_on_Area2D_body_entered"]
+[connection signal="pressed" from="Button" to="KinematicBody2D22" method="_on_Button_pressed"]

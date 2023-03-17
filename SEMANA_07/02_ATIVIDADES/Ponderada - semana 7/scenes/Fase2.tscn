@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Imagens/background univero.jpg" type="Texture" id=1]
+[ext_resource path="res://scenes/SpawnLocation.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Dinossauro.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Fase2.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 98.2555, 49.153 )
+
+[node name="BackgroundUnivero" type="Sprite"]
+position = Vector2( 513.75, 299.75 )
+scale = Vector2( 0.292624, 0.305867 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Position2D" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( -66.8024, -976.717 )
+
+[node name="Position2D2" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( -1000.43, -983.271 )
+
+[node name="Position2D3" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( -614.924, -976.717 )
+
+[node name="Position2D4" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( 566.964, -989.849 )
+
+[node name="Position2D5" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( 1087.57, -986.54 )
+
+[node name="Position2D6" type="Position2D" parent="." groups=["spawn"]]
+position = Vector2( -1632.64, -980.001 )
+
+[node name="Dinossauro" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1173.32, 664.824 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -1851.35, 916.248 )
+shape = SubResource( 1 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D2"]
+position = Vector2( 1883.82, 912.978 )
+shape = SubResource( 1 )
+
+[node name="SpawnLocation" parent="." instance=ExtResource( 2 )]
+position = Vector2( -94.8325, -1306.94 )
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]

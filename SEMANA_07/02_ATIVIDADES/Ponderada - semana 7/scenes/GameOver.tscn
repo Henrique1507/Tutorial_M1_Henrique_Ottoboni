@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameOver.png" type="Texture" id=1]
+[ext_resource path="res://scenes/GameOver.gd" type="Script" id=2]
+
+[node name="GameOver" type="Sprite"]
+position = Vector2( 511, 301 )
+scale = Vector2( 1.2775, 1.00333 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+margin_left = 230.92
+margin_top = 243.189
+margin_right = 335.92
+margin_bottom = 279.189
+text = "VOLTAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
